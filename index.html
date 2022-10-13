@@ -1,13 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+    <title>FoodReign</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+
 </head>
 <body>
-    Hola Igor
+    <header>
+        <div class="div-header">
+            <div>
+                <h1 class="nombre-sitio"> <span>Food</span>Reign</h1>
+            </div>
+            <div class="contenedor-navegacion">
+                <nav class="nav-principal contenedor">
+                        <div class="secciones transition-enlaces">
+                            <a href="index.html">
+                                <span class="icono"><ion-icon name="home"></ion-icon></span>
+                                <span class="titulo">Inicio</span>
+                            </a>
+                        </div>
+                        <div class="secciones transition-enlaces">
+                            <a href="nosotros.html">
+                                <span class="icono"><ion-icon name="people"></ion-icon></span>
+                                <span class="titulo">Nosotros</span>
+                            </a>
+                        </div>
+                        <div class="secciones transition-enlaces">
+                            <a href="tienda.html">
+                                <span class="icono"><ion-icon name="bag-handle"></ion-icon></span>
+                                <span class="titulo">Menú</span>
+                            </a>
+                        </div>
+                        <div class="secciones transition-enlaces">
+                            <a href="galeria.html">
+                                <span class="icono"><ion-icon name="images"></ion-icon></span>
+                                <span class="titulo">Opiniones</span>
+                            </a>
+                        </div>
+                        <div class="secciones transition-enlaces">
+                            <a href="contacto.html">
+                                <span class="icono"><ion-icon name="mail"></ion-icon></span>
+                                <span class="titulo">Contacto</span>
+                            </a>
+                        </div>
+                        <div class="separador"></div>
+                        <div class="secciones transition-enlaces" id="div-cesta">
+                            <a href="cesta.html">
+                                <span class="icono"><ion-icon name="cart-outline"></ion-icon></span>
+                                <span class="titulo">Cesta</span>
+                            </a>
+                            <div class="cesta">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-cesta" class="btn u-full-width">Vaciar cesta</a>
+
+                            </div>
+                        </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="hero"></div>
+
+    </div>
+    
+    <section class="contenedor categorias">
+        <h2  class="text-center color-gris">Experiencias Gastronómicas a domicilio</h2>
+        <div class="listado-categorias">
+            <div class="categoria transition-enlaces">
+                <img src="img/categoria1.jpg" alt="Imagen Chef"/>
+                <a href="#">Chef</a>
+            </div>
+            <div class="categoria transition-enlaces">
+                <img src="img/categoria2.jpg" alt="Imagen Comida"/>
+                <a href="#">Comida extranjera</a>
+            </div>
+            <div class="categoria transition-enlaces">
+                <img src="img/categoria3.jpg" alt="Imagen Cocktails"/>
+                <a href="#">Cocktails</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre-nosotros">
+        <div class="contenedor sobre-nosotros-grid">
+            <video autoplay loop muted src="./img/OllaVapor.mp4"></video>
+            <div class="texto-nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, in et voluptas vel voluptates vero temporibus debitis cupiditate aliquam dignissimos repudiandae iusto molestias incidunt necessitatibus maiores saepe assumenda sed libero.</p>
+                <a class="btn u-full-width" href="nosotros.html">Conócenos</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Nuestro Productos</h2>
+
+        <div class="listado-productos">
+            <div class="producto">
+                <img src="img/producto1.jpg" alt="Imagen Producto">
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>1 ingrediente</li>
+                        <li>2 ingrediente</li>
+                        <li>3 ingrediente</li>
+                    </ul>
+                    <h4>Receta</h4>
+                    <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                    <p class="precio">35€</p>
+                    <a  class="btn" href="#">Agregar al Carrito</a>
+                </div> <!--Info Producto-->
+            </div> <!--Producto-->
+            <div class="producto">
+                <img src="img/producto2.jpg" alt="Imagen Producto">
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>1 ingrediente</li>
+                        <li>2 ingrediente</li>
+                        <li>3 ingrediente</li>
+                    </ul>
+                    <h4>Receta</h4>
+                    <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                    <p class="precio">35€</p>
+                    <a  class="btn" href="#">Agregar al Carrito</a>
+                </div> <!--Info Producto-->
+            </div> <!--Producto-->
+            <div class="producto">
+                <img src="img/producto3.jpg" alt="Imagen Producto">
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>1 ingrediente</li>
+                        <li>2 ingrediente</li>
+                        <li>3 ingrediente</li>
+                    </ul>
+                    <h4>Receta</h4>
+                    <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                    <p class="precio">35€</p>
+                    <a  class="btn" href="#">Agregar al Carrito</a>
+                </div> <!--Info Producto-->
+            </div> <!--Producto-->
+            <div class="producto">
+                <img src="img/producto4.jpg" alt="Imagen Producto">
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>1 ingrediente</li>
+                        <li>2 ingrediente</li>
+                        <li>3 ingrediente</li>
+                    </ul>
+                    <h4>Receta</h4>
+                    <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                    <p class="precio">35€</p>
+                    <a  class="btn" href="#">Agregar al Carrito</a>
+                </div> <!--Info Producto-->
+            </div> <!--Producto-->
+            <div class="producto">
+                <img src="img/producto5.jpg" alt="Imagen Producto">
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>1 ingrediente</li>
+                        <li>2 ingrediente</li>
+                        <li>3 ingrediente</li>
+                    </ul>
+                    <h4>Receta</h4>
+                    <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                    <p class="precio">35€</p>
+                    <a  class="btn" href="#">Agregar al Carrito</a>
+                </div> <!--Info Producto-->
+            </div> <!--Producto-->
+            <div class="producto">
+                <img src="img/producto6.jpg" alt="Imagen Producto">
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>1 ingrediente</li>
+                        <li>2 ingrediente</li>
+                        <li>3 ingrediente</li>
+                    </ul>
+                    <h4>Receta</h4>
+                    <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                    <p class="precio">35€</p>
+                    <a  class="btn" href="#">Agregar al Carrito</a>
+                </div> <!--Info Producto-->
+            </div> <!--Producto-->
+
+        </div> <!--Fin de Listado de Productos-->
+    </main>
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorías</h3>
+                <nav class="footer-menu">
+                    <a href="#">Cocina</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardín</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorios</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <nav class="footer-menu">
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Misión, Visión y Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Terminos de Servicio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav class="footer-menu">
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Ayuda en línea</a>
+                    <a href="#">Confianza y Seguridad</a>
+                </nav>
+            </div>
+        </div>
+
+
+        <p class="copyright">Todos los derechos reservados. TiendaMuebles</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
