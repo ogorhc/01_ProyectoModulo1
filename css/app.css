@@ -1,0 +1,464 @@
+
+/** Siempre en todos los proyectos **/
+html {
+    box-sizing: border-box; /** Para cuando agreguemos un width y después un padding no modifica el tamaño de elemento **/
+    font-size: 62.5%; /** 1rem = 10px **/
+    background-color: #232c33;
+}
+/** Siempre en todos los proyectos **/
+*, *:before, *:after {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* Globales */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 4rem;
+    color:#232c33;
+}
+
+p {
+    color:#232c33;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    font-size: 3rem;
+    color: #232c33;
+}
+h4 {
+    font-size: 2rem;
+    color: #232c33;
+}
+li {
+    font-size: 1.8rem;
+    color: #232c33;
+    list-style-type: none;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #e1e1e1;
+}
+
+.btn {
+    background-color: #232c33;
+    display: block;
+    color: #e1e1e1;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+    text-align: center;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #4c5e6da1;
+    cursor: pointer;
+}
+
+/** Utilidades **/
+.text-center {
+    text-align: center;
+}
+
+.max-width-30 {
+    max-width: 30rem;
+}
+.color-gris {
+    color:#e1e1e1;
+}
+/** Header y navegación **/
+
+.contenedor {
+    margin: 0 auto;
+}
+.nombre-sitio {
+    color:#a1817e;
+}
+.nombre-sitio span{
+    color: #e1e1e1;
+    font-size: 5rem;
+}
+
+.nombre-sitio {
+    padding-left: 3rem;
+    margin-top: 5rem;
+    text-align: left;
+}
+
+.contenedor-navegacion{
+    margin-right: 10rem;
+    width: 120rem;
+
+}
+.nav-principal {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.nav-ul {
+    display: flex;
+    flex-direction: column;
+}
+.icono ion-icon {
+    position: relative;
+    font-size: 2rem;
+    vertical-align: -12%;
+    transition: all .3s ease;
+}
+
+.hero {
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 50rem;
+}
+.titulo {
+    position: relative;
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    vertical-align: middle;
+    transition: all .3s ease;
+}
+
+.div-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 12rem;
+    border-bottom: 1rem solid #e1e1e1;
+
+}
+.div-header a {
+    width: 14rem;
+    text-align: center;
+}
+
+.separador {
+    width: 3rem;
+}
+.secciones {
+    display: flex;
+    align-items: center;
+    height: 12rem;
+    padding: 0 1rem;
+
+}
+.transition-enlaces {
+    transition: all .3s ease;
+}
+
+.transition-enlaces:hover {
+    background-color: #e1e1e1;
+    color: #232c33;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.transition-enlaces:hover a{
+    color: #232c33;
+}
+#div-cesta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.cesta {
+    display: block;
+    overflow: hidden;
+    transform-origin: 100% 50%;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 12rem;
+    width: 50rem;
+    transition: all .5s ease;
+    background-color: #e1e1e1;
+}
+#div-cesta:hover .cesta{
+    transition-delay: .1s;
+    height: 40rem;
+    width: 100rem;
+
+}
+#vaciar-cesta {
+    color:#e1e1e1
+}
+
+/** Experiencias gastronómicas **/
+.categorias {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+.categoria a{
+    text-align: center;
+    display: block; 
+    padding: 2rem;
+    font-size: 2rem;
+}
+.categoria img {
+    object-fit: cover;
+    width: 100%;
+    height: 28rem;
+}
+.categoria a {
+    height: 10rem;
+}
+.categorias .transition-enlaces:hover{
+    border-radius: 0 0 2rem 2rem;
+}
+
+/** Bloque Nosotros **/
+video {
+    object-fit: cover;
+    height: 50rem;
+    z-index: -1;
+}
+.sobre-nosotros {
+    background: linear-gradient( to right, transparent 25%, #e1e1e1 50%, #e1e1e1 100% );
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% ,120rem;
+}
+
+.sobre-nosotros-grid {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texto-nosotros {
+    padding-top: 5rem;
+    flex-basis: 50%;
+    color: #FFF;
+}
+
+/** Listado de Productos **/
+
+.contenido-principal {
+    padding-top: 5rem;
+}
+
+.listado-productos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+
+.producto:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.producto:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.producto:nth-child(3) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+.producto:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.producto:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.producto:nth-child(6) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+.producto img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.producto {
+    background-color: #e1e1e1;
+}
+
+.texto-producto {
+    text-align: center;
+    color: #FFF;
+    padding: 2rem;
+}
+
+.texto-producto h3 {
+    margin: 0;
+}
+.texto-producto p {
+    margin: 0 0 .5rem 0;
+}
+.texto-producto .precio {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+/** Footer **/
+
+.site-footer {
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5rem;
+    padding: 5rem;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.site-footer h3 {
+    margin-bottom: 0.5rem;
+}
+
+.footer-menu a {
+    display: block;
+}
+
+.copyright {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+/** Nosotros **/
+
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 4rem;
+}
+
+.informacion-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/** Blog **/
+
+.contenedor-blog {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+
+.entrada {
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+    border: none;
+}
+
+.entrada-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada-meta p {
+    font-weight: bold;
+}
+
+.entrada-meta span {
+    color: #037bc0;
+}
+
+.contenido-entrada-blog {
+    width: 60rem;
+    margin: 0 auto;
+}
+
+/** Galería **/
+.galeria {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.galeria img {
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+}
+
+/** Formulario **/
+
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+
+}
+
+.formulario fieldset {
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.formulario legend {
+    background-color: #005485;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo label {
+    flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]),
+textarea,
+select {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
