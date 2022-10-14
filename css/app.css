@@ -18,7 +18,7 @@ h1, h2, h3 {
     margin: 0 0 5rem 0;
 }
 h1 {
-    font-size: 5rem;
+    font-size: 6rem;
 }
 h2 {
     font-size: 4rem;
@@ -54,8 +54,14 @@ a {
     text-decoration: none;
     color: #e1e1e1;
 }
-
+tr {
+    text-align: center;
+}
+tr img{
+    margin: auto;
+}
 .btn {
+
     background-color: #232c33;
     display: block;
     color: #e1e1e1;
@@ -65,9 +71,13 @@ a {
     transition: background-color .3s ease-out;
     text-align: center;
     border: none;
+    max-width: 50rem;
+    cursor: pointer;
+    margin: 0 auto;
 }
 
 .btn:hover {
+    
     background-color: #4c5e6da1;
     cursor: pointer;
 }
@@ -83,6 +93,15 @@ a {
 .color-gris {
     color:#e1e1e1;
 }
+.height-20rem {
+    max-height: 20rem;
+}
+.top-30rem {
+    top: 30rem;
+}
+.u-full-width {
+    width: 100%;
+    box-sizing: border-box; }
 /** Header y navegación **/
 
 .contenedor {
@@ -93,7 +112,7 @@ a {
 }
 .nombre-sitio span{
     color: #e1e1e1;
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .nombre-sitio {
@@ -103,7 +122,7 @@ a {
 }
 
 .contenedor-navegacion{
-    margin-right: 10rem;
+    margin-right: 3rem;
     width: 120rem;
 
 }
@@ -122,6 +141,11 @@ a {
     vertical-align: -12%;
     transition: all .3s ease;
 }
+.icono-sesion ion-icon {
+    font-size: 4rem;
+    position: relative;
+    bottom: -.4rem;
+}
 
 .hero {
     background-image: url(../img/principal.jpg);
@@ -130,49 +154,86 @@ a {
     background-position: center center;
     height: 50rem;
 }
+
+
 .titulo {
     position: relative;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     padding-left: 1rem;
     vertical-align: middle;
     transition: all .3s ease;
 }
 
 .div-header {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 12rem;
-    border-bottom: 1rem solid #e1e1e1;
+}
+.div-header::before {
+    content: "";
+    position: absolute;
+    height: 2rem;
+    right: 0;
+    top: 10rem;
+    left: calc(100% - 4rem);
+    background-color: #a1817e;
+    transition: .2s ease-in-out;
+}
+.div-header::after {
+    content: "";
+    position: absolute;
+    top: 10rem;
+    height: 2rem;
+    right: 0;
+    left:  calc(100% - 2rem);
+    background-color: #e1e1e1;
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+}
+.div-header:hover::after{
+
+    left:16.77rem;
+}
+.div-header:hover::before{
+
+    left:0;
+}
+
+.div-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 12rem;
 
 }
-.div-header a {
-    width: 14rem;
-    text-align: center;
-}
 
-.separador {
-    width: 3rem;
-}
 .secciones {
     display: flex;
     align-items: center;
     height: 12rem;
     padding: 0 1rem;
+    width: 14rem;
+    justify-content: center;
 
 }
 .transition-enlaces {
-    transition: all .3s ease;
+    transition: all .2s ease;
 }
 
 .transition-enlaces:hover {
+    transition-delay: .2s;
     background-color: #e1e1e1;
     color: #232c33;
     border-radius: 2rem 2rem 0 0;
 }
 
 .transition-enlaces:hover a{
+    transition-delay: .2s;
     color: #232c33;
 }
 #div-cesta {
@@ -188,13 +249,13 @@ a {
     height: 0;
     position: absolute;
     right: 0;
-    top: 12rem;
+    top: 11rem;
     width: 50rem;
-    transition: all .5s ease;
+    transition: all .3s ease;
     background-color: #e1e1e1;
 }
 #div-cesta:hover .cesta{
-    transition-delay: .1s;
+    transition-delay: .4s;
     height: 40rem;
     width: 100rem;
 
@@ -203,6 +264,14 @@ a {
     color:#e1e1e1
 }
 
+.borrar-producto{
+    background-color:#a1817e;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #e1e1e1;
+    font-weight: bold;
+}
 /** Experiencias gastronómicas **/
 .categorias {
     text-align: center;
@@ -240,7 +309,7 @@ video {
     z-index: -1;
 }
 .sobre-nosotros {
-    background: linear-gradient( to right, transparent 25%, #e1e1e1 50%, #e1e1e1 100% );
+    background: linear-gradient( to right, transparent 25%, #e1e1e1 40%, #e1e1e1 100% );
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 100% ,120rem;
@@ -248,7 +317,7 @@ video {
 
 .sobre-nosotros-grid {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .texto-nosotros {
@@ -353,6 +422,7 @@ video {
 .copyright {
     margin-top: 5rem;
     text-align: center;
+    color: #e1e1e1;
 }
 
 /** Nosotros **/
