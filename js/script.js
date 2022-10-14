@@ -13,16 +13,14 @@ let currentUser = null
 if(! localStorage.getItem("allUsers")){
     localStorage.setItem("allUsers", JSON.stringify([])) 
 }
-var html = getHtml();
-
-
+var html = getHtml().split("/")[getHtml().split("/").length-1];
 function getHtml(){
     return document.URL;
 }
 cargarEventListeners()
 function cargarEventListeners() {
     //Página de inicio sesión
-    if (! html === "sesion.html"){
+    if (html != "sesion.html"){
     //Funciones relacionadas con la cesta en página de inicio/Menú/Cocktails
     listaProductos.addEventListener("click", agregarProducto)
     cesta.addEventListener("click", eliminarProducto)
@@ -76,6 +74,7 @@ function userLogin(e){
                     return element
                 }
             })
+            alert("Sesión iniciada correctamente.")
         }else{
             alert("Usuario aún no registrado. Por favor seleccione la pestaña de registro.")
         }
@@ -92,6 +91,7 @@ function setAllUsersInLocalStorage(users) {
 
 function agregarProducto(e) {
     e.preventDefault()
+    console.log(e.target.classList)
     if (e.target.classList.contains("agregar-carrito")){
         const productoSeleccionado = e.target.parentElement.parentElement
         obtenerDatosProducto(productoSeleccionado)
