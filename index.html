@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodReign</title>
+    <title>FoodReign - Inicio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,13 +33,13 @@
                             </a>
                         </div>
                         <div class="secciones transition-enlaces">
-                            <a href="tienda.html">
+                            <a href="experiencias.html">
                                 <span class="icono"><ion-icon name="bag-handle"></ion-icon></span>
-                                <span class="titulo">Menú</span>
+                                <span class="titulo">Experiencias</span>
                             </a>
                         </div>
                         <div class="secciones transition-enlaces">
-                            <a href="galeria.html">
+                            <a href="opiniones.html">
                                 <span class="icono"><ion-icon name="images"></ion-icon></span>
                                 <span class="titulo">Opiniones</span>
                             </a>
@@ -50,7 +50,7 @@
                                 <span class="titulo">Contacto</span>
                             </a>
                         </div>
-                        <div class="separador"></div>
+                        <!-- <div class="separador"></div> -->
                         <div class="secciones transition-enlaces" id="div-cesta">
                             <a href="cesta.html">
                                 <span class="icono"><ion-icon name="cart-outline"></ion-icon></span>
@@ -69,9 +69,14 @@
                                     </thead>
                                     <tbody></tbody>
                                 </table>
-                                <a href="#" id="vaciar-cesta" class="btn u-full-width">Vaciar cesta</a>
-
+                                <a href="#" id="vaciar-cesta" class="btn u-full-width vaciar-cesta">Vaciar cesta</a>
                             </div>
+
+                        </div>
+                        <div class="secciones transition-enlaces">
+                            <a href="sesion.html">
+                                <span class="icono-sesion"><ion-icon name="person-circle"></ion-icon></span>
+                            </a>
                         </div>
                 </nav>
             </div>
@@ -86,15 +91,15 @@
         <div class="listado-categorias">
             <div class="categoria transition-enlaces">
                 <img src="img/categoria1.jpg" alt="Imagen Chef"/>
-                <a href="#">Chef</a>
+                <a href="chef.html">Chef</a>
             </div>
             <div class="categoria transition-enlaces">
                 <img src="img/categoria2.jpg" alt="Imagen Comida"/>
-                <a href="#">Comida extranjera</a>
+                <a href="menu.html">Comida extranjera</a>
             </div>
             <div class="categoria transition-enlaces">
                 <img src="img/categoria3.jpg" alt="Imagen Cocktails"/>
-                <a href="#">Cocktails</a>
+                <a href="cocktails.html">Cocktails</a>
             </div>
         </div>
     </section>
@@ -111,7 +116,7 @@
     </section>
 
     <main class="contenido-principal contenedor">
-        <h2 class="text-center">Nuestro Productos</h2>
+        <h2 class="text-center color-gris">Nuestro Productos</h2>
 
         <div class="listado-productos">
             <div class="producto">
@@ -127,7 +132,7 @@
                     <h4>Receta</h4>
                     <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
                     <p class="precio">35€</p>
-                    <a  class="btn" href="#">Agregar al Carrito</a>
+                    <a  class="btn agregar-carrito" href="#" data-id="312380">Agregar al Carrito</a>
                 </div> <!--Info Producto-->
             </div> <!--Producto-->
             <div class="producto">
@@ -143,7 +148,7 @@
                     <h4>Receta</h4>
                     <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
                     <p class="precio">35€</p>
-                    <a  class="btn" href="#">Agregar al Carrito</a>
+                    <a  class="btn agregar-carrito" href="#" data-id="312381">Agregar al Carrito</a>
                 </div> <!--Info Producto-->
             </div> <!--Producto-->
             <div class="producto">
@@ -159,7 +164,7 @@
                     <h4>Receta</h4>
                     <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
                     <p class="precio">35€</p>
-                    <a  class="btn" href="#">Agregar al Carrito</a>
+                    <a  class="btn agregar-carrito" href="#" data-id="312382">Agregar al Carrito</a>
                 </div> <!--Info Producto-->
             </div> <!--Producto-->
             <div class="producto">
@@ -175,7 +180,7 @@
                     <h4>Receta</h4>
                     <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
                     <p class="precio">35€</p>
-                    <a  class="btn" href="#">Agregar al Carrito</a>
+                    <a  class="btn agregar-carrito" href="#" data-id="312383">Agregar al Carrito</a>
                 </div> <!--Info Producto-->
             </div> <!--Producto-->
             <div class="producto">
@@ -191,7 +196,7 @@
                     <h4>Receta</h4>
                     <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
                     <p class="precio">35€</p>
-                    <a  class="btn" href="#">Agregar al Carrito</a>
+                    <a  class="btn agregar-carrito" href="#" data-id="312384">Agregar al Carrito</a>
                 </div> <!--Info Producto-->
             </div> <!--Producto-->
             <div class="producto">
@@ -207,7 +212,7 @@
                     <h4>Receta</h4>
                     <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
                     <p class="precio">35€</p>
-                    <a  class="btn" href="#">Agregar al Carrito</a>
+                    <a  class="btn agregar-carrito" href="#" data-id="312385">Agregar al Carrito</a>
                 </div> <!--Info Producto-->
             </div> <!--Producto-->
 
@@ -217,17 +222,15 @@
     <footer class="site-footer">
         <div class="grid-footer contenedor">
             <div>
-                <h3>Categorías</h3>
+                <h3 class="color-gris">Experiencias</h3>
                 <nav class="footer-menu">
-                    <a href="#">Cocina</a>
-                    <a href="#">Oficina</a>
-                    <a href="#">Jardín</a>
-                    <a href="#">Cochera</a>
-                    <a href="#">Dormitorios</a>
+                    <a href="chef.html">Chef</a>
+                    <a href="menu.html">Comida Extranjera</a>
+                    <a href="cocktails.html">Cocktails</a>
                 </nav>
             </div>
             <div>
-                <h3>Sobre Nosotros</h3>
+                <h3 class="color-gris">Sobre Nosotros</h3>
                 <nav class="footer-menu">
                     <a href="#">Nuestra Historia</a>
                     <a href="#">Misión, Visión y Valores</a>
@@ -237,7 +240,7 @@
                 </nav>
             </div>
             <div>
-                <h3>Soporte</h3>
+                <h3 class="color-gris">Soporte</h3>
                 <nav class="footer-menu">
                     <a href="#">Preguntas Frecuentes</a>
                     <a href="#">Ayuda en línea</a>
@@ -247,11 +250,11 @@
         </div>
 
 
-        <p class="copyright">Todos los derechos reservados. TiendaMuebles</p>
+        <p class="copyright">Todos los derechos reservados. FoodReign</p>
     </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>

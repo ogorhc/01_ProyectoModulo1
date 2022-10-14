@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodReign - Contacto</title>
+    <title>FoodReign - Inicio Sesión</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,28 +51,6 @@
                             </a>
                         </div>
                         <!-- <div class="separador"></div> -->
-                        <div class="secciones transition-enlaces" id="div-cesta">
-                            <a href="cesta.html">
-                                <span class="icono"><ion-icon name="cart-outline"></ion-icon></span>
-                                <span class="titulo">Cesta</span>
-                            </a>
-                            <div class="cesta">
-                                <table id="lista-carrito" class="u-full-width">
-                                    <thead>
-                                        <tr>
-                                            <th>Imagen</th>
-                                            <th>Nombre</th>
-                                            <th>Precio</th>
-                                            <th>Cantidad</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                                <a href="#" id="vaciar-cesta" class="btn u-full-width">Vaciar cesta</a>
-                            </div>
-
-                        </div>
                         <div class="secciones transition-enlaces">
                             <a href="sesion.html">
                                 <span class="icono-sesion"><ion-icon name="person-circle"></ion-icon></span>
@@ -85,7 +63,37 @@
     <div class="hero height-20rem"></div>
 
     <main class="contenido-principal contenedor">
-        <h2 class="text-center color-gris">Contacto</h2>
+        <h2 class="text-center color-gris">Inicio de Sesión</h2>
+        <div class="formulario-contenedor">
+            <div class="login">
+                <form action="formularioLogin">
+                    <fieldset>
+                        <legend></legend>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="emailid">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="passwordid">
+                        <input type="submit" value="Iniciar sesion" id="logIn">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="signin">
+                <form action="formularioSignIn">
+                    <fieldset>
+                        <legend></legend>
+                        <label for="firstName">Nombre</label>
+                        <input type="text" name="firstName" id="firstName">
+                        <label for="secondName">Apellido</label>
+                        <input type="text" name="secondName" id="secondName">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password">
+                        <input type="submit" value="Registrarse" id="signIn">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="site-footer">
